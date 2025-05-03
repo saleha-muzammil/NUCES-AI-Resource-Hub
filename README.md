@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 # AI Class Resource Hub
 
 A modern, student-friendly website for sharing AI resources, assignments, and class announcements. Built with Next.js and Tailwind CSS for easy deployment on Vercel or GitHub Pages.
@@ -41,3 +42,6 @@ A modern, student-friendly website for sharing AI resources, assignments, and cl
 
 ---
 Made with ❤️ for AI students.
+=======
+# NUCES-AI-Resource-Hub
+>>>>>>> c5f291a94dc29868479710e46ea07feff433cd9f
