@@ -51,14 +51,6 @@ function NeuralNetworkDemo() {
     none: (x: number) => x
   };
 
-  // Activation function derivatives
-  const activationDerivatives = {
-    sigmoid: (x: number) => x * (1 - x),
-    relu: (x: number) => x > 0 ? 1 : 0,
-    tanh: (x: number) => 1 - x * x,
-    none: (x: number) => 1
-  };
-
   useEffect(() => {
     const canvas = canvasRef.current;
     if (!canvas) return;
@@ -254,8 +246,8 @@ function NeuralNetworkDemo() {
     setNeurons(newNeurons);
     
     // Process each layer
-    let currentNeurons = [...newNeurons];
-    let steps: string[] = [];
+    const currentNeurons = [...newNeurons];
+    const steps: string[] = [];
     
     for (let layerIndex = 1; layerIndex < layers.length; layerIndex++) {
       const layer = layers[layerIndex];
@@ -337,6 +329,7 @@ function NeuralNetworkDemo() {
               {index > 0 && (
                 <select
                   value={layer.activationFunction}
+                  // eslint-disable-next-line @typescript-eslint/no-explicit-any
                   onChange={(e) => handleActivationChange(index, e.target.value as any)}
                   className="w-24 px-2 py-1 border rounded text-sm"
                 >
@@ -475,7 +468,7 @@ function ClusteringDemo() {
     ctx.clearRect(0, 0, canvas.width, canvas.height);
 
     // Draw points
-    points.forEach((point, i) => {
+    points.forEach((point) => {
       ctx.beginPath();
       ctx.arc(point.x, point.y, 5, 0, Math.PI * 2);
       ctx.fillStyle = point.cluster !== undefined ? colors[point.cluster] : '#64748b';
@@ -483,7 +476,7 @@ function ClusteringDemo() {
     });
 
     // Draw centroids
-    centroids.forEach((centroid, i) => {
+    centroids.forEach((centroid) => {
       ctx.beginPath();
       ctx.arc(centroid.x, centroid.y, 8, 0, Math.PI * 2);
       ctx.fillStyle = centroid.color;
@@ -542,7 +535,7 @@ function ClusteringDemo() {
       const newPoints = points.map(point => {
         let minDist = Infinity;
         let nearestCluster = 0;
-        let distances = centroids.map((centroid, i) => {
+        const distances = centroids.map((centroid, i) => {
           const dist = calculateDistance(point, centroid);
           if (dist < minDist) {
             minDist = dist;
@@ -675,7 +668,7 @@ function ClusteringDemo() {
           </div>
         </div>
         <div className="text-sm text-gray-600 mt-2">
-          Click on the canvas to add points. Set k and click "Run K-Means" to start clustering.
+          Click on the canvas to add points. Set k and click Run K-Means to start clustering.
           Watch the calculations panel to see how the algorithm works step by step.
         </div>
       </div>

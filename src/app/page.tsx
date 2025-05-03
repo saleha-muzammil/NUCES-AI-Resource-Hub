@@ -2,7 +2,7 @@
 
 import React, { useEffect, useState } from "react";
 import Link from "next/link";
-import { FaBook, FaGraduationCap, FaNewspaper, FaCode, FaChartLine, FaRobot, FaBrain, FaBalanceScale, FaTrophy } from "react-icons/fa";
+import { FaGraduationCap, FaCode, FaChartLine, FaRobot, FaBrain, FaBalanceScale, FaTrophy } from "react-icons/fa";
 
 function ThemeToggle() {
   const [theme, setTheme] = useState<"light" | "dark">("light");
@@ -131,7 +131,7 @@ export default function Home() {
                 <h2 className="text-xl font-semibold text-gray-100">AI Index Report 2025</h2>
               </div>
               <p className="mt-4 text-gray-300">
-                Explore the latest trends, data, and insights in artificial intelligence from Stanford HAI's comprehensive 2025 AI Index Report.
+                Explore the latest trends, data, and insights in artificial intelligence from Stanford HAI comprehensive 2025 AI Index Report.
               </p>
             </div>
           </a>
