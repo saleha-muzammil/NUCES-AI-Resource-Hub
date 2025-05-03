@@ -34,5 +34,3 @@ A modern, student-friendly website for sharing AI resources, assignments, and cl
 
 ---
 Made with ❤️ for AI students.
-=======
-# NUCES-AI-Resource-Hub
