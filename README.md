@@ -33,4 +33,4 @@ A modern, student-friendly website for sharing AI resources, assignments, and cl
 - Add resources, assignments, and announcements as needed.
 
 ---
-Made with ❤️ for AI students.
+Made with ❤️ for my students.
