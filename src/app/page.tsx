@@ -2,7 +2,7 @@
 
 import React, { useEffect, useState } from "react";
 import Link from "next/link";
-import { FaGraduationCap, FaCode, FaChartLine, FaRobot, FaBrain, FaBalanceScale, FaTrophy } from "react-icons/fa";
+import { FaGraduationCap, FaCode, FaChartLine, FaRobot, FaBrain, FaBalanceScale, FaTrophy, FaGithub, FaStar, FaCodeBranch } from "react-icons/fa";
 
 function ThemeToggle() {
   const [theme, setTheme] = useState<"light" | "dark">("light");
@@ -53,7 +53,29 @@ export default function Home() {
           <h1 className="text-4xl font-bold text-purple-800 dark:text-purple-200">NUCES AI Hub</h1>
           <p className="mt-2 text-lg text-gray-600 dark:text-gray-300">Your comprehensive guide to AI education and opportunities</p>
         </div>
-        <ThemeToggle />
+        <div className="flex items-center gap-4">
+          <a
+            href="https://github.com/saleha-muzammil/NUCES-AI-Resource-Hub"
+            target="_blank"
+            rel="noopener noreferrer"
+            className="flex items-center gap-2 p-2 rounded-full border border-gray-200 dark:border-gray-700 bg-white dark:bg-gray-800 hover:bg-gray-100 dark:hover:bg-gray-700 transition-colors"
+            title="Star on GitHub"
+          >
+            <FaStar className="h-5 w-5 text-yellow-400" />
+            <span className="text-sm text-gray-700 dark:text-gray-300">Star</span>
+          </a>
+          <a
+            href="https://github.com/saleha-muzammil/NUCES-AI-Resource-Hub/fork"
+            target="_blank"
+            rel="noopener noreferrer"
+            className="flex items-center gap-2 p-2 rounded-full border border-gray-200 dark:border-gray-700 bg-white dark:bg-gray-800 hover:bg-gray-100 dark:hover:bg-gray-700 transition-colors"
+            title="Fork on GitHub"
+          >
+            <FaCodeBranch className="h-5 w-5 text-purple-400" />
+            <span className="text-sm text-gray-700 dark:text-gray-300">Fork</span>
+          </a>
+          <ThemeToggle />
+        </div>
       </header>
 
       <main className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-8">
@@ -178,11 +200,22 @@ export default function Home() {
 
       </main>
 
-      <footer className="bg-white border-t mt-12">
+      <footer className="bg-white dark:bg-gray-900 border-t mt-12">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-6">
-          <p className="text-center text-gray-500 text-sm">
-            © {new Date().getFullYear()} AI Resource Hub. All rights reserved.
-          </p>
+          <div className="flex flex-col items-center gap-4">
+            <p className="text-center text-gray-500 dark:text-gray-400 text-sm">
+              © {new Date().getFullYear()} AI Resource Hub. All rights reserved.
+            </p>
+            <a
+              href="https://github.com/saleha-muzammil/NUCES-AI-Resource-Hub/issues"
+              target="_blank"
+              rel="noopener noreferrer"
+              className="flex items-center gap-2 text-sm text-purple-600 dark:text-purple-400 hover:text-purple-800 dark:hover:text-purple-300 transition-colors"
+            >
+              <FaGithub className="h-4 w-4" />
+              <span>Give feedback or report issues</span>
+            </a>
+          </div>
         </div>
       </footer>
     </div>
