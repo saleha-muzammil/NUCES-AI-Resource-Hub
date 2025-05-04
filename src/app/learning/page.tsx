@@ -1,7 +1,7 @@
 "use client";
 import React, { useState } from "react";
 import Link from "next/link";
-import { FaChevronRight, FaBook, FaCode, FaBrain, FaChartLine, FaSearch, FaLightbulb } from "react-icons/fa";
+import { FaChevronRight, FaBook, FaBrain, FaChartLine, FaSearch, FaLightbulb } from "react-icons/fa";
 
 const aiTrivia = [
   {
@@ -76,7 +76,7 @@ function LearningTrivia() {
     return (
       <div className="p-6 bg-green-50 dark:bg-green-900 rounded-lg text-gray-900 dark:text-green-100 text-center">
         <FaLightbulb className="inline text-2xl mb-2 text-yellow-500" />
-        <div className="text-lg font-semibold mb-2">You've completed the AI/ML Trivia!</div>
+        <div className="text-lg font-semibold mb-2">You have completed the AI/ML Trivia!</div>
         <div className="text-gray-700 dark:text-green-200">Keep exploring the resources above to deepen your knowledge.</div>
       </div>
     );
