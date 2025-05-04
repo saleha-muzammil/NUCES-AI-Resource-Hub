@@ -168,9 +168,9 @@ export default function Domains() {
               <div>
                 <h3 className="text-lg font-semibold text-gray-100 mb-4">Recommended Books</h3>
                 <ul className="space-y-2 text-gray-300">
-                  <li>• "Deep Learning" by Ian Goodfellow</li>
-                  <li>• "Pattern Recognition and Machine Learning" by Christopher Bishop</li>
-                  <li>• "Artificial Intelligence: A Modern Approach" by Stuart Russell</li>
+                  <li>• Deep Learning by Ian Goodfellow</li>
+                  <li>• Pattern Recognition and Machine Learning by Christopher Bishop</li>
+                  <li>• Artificial Intelligence: A Modern Approach by Stuart Russell</li>
                 </ul>
               </div>
             </div>

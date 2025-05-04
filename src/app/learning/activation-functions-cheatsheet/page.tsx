@@ -49,7 +49,7 @@ export default function ActivationFunctionsCheatsheet() {
           <section>
             <h2 className="text-2xl font-semibold text-gray-900 mb-2">Summary</h2>
             <p className="text-gray-700">
-              Activation functions are crucial as they introduce non-linearity, enabling CNNs to model complex relationships and capture intricate patterns. Non-linearity allows CNNs to approximate complex functions and tackle tasks like image recognition and object detection. Understanding the properties and trade-offs of activation functions empowers informed choices in designing CNN architectures, leveraging their strengths to unlock the network's full expressive power.
+              Activation functions are crucial as they introduce non-linearity, enabling CNNs to model complex relationships and capture intricate patterns. Non-linearity allows CNNs to approximate complex functions and tackle tasks like image recognition and object detection. Understanding the properties and trade-offs of activation functions empowers informed choices in designing CNN architectures, leveraging their strengths to unlock the networks full expressive power.
             </p>
             <p className="text-gray-700 mt-2">
               By selecting appropriate activation functions, CNNs can learn rich representations and effectively handle challenging tasks, enhancing their overall performance and capabilities.

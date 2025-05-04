@@ -32,7 +32,7 @@ export default function Competitions() {
 
               <div className="bg-gray-900 border-l-4 border-purple-500 p-4 rounded-lg">
                 <h4 className="font-semibold text-purple-300 mb-2">Kaggle Competitions</h4>
-                <p className="text-gray-300 mb-2">World's largest data science and machine learning platform with regular competitions on real-world problems.</p>
+                <p className="text-gray-300 mb-2">The largest data science and machine learning platform with regular competitions on real-world problems.</p>
                 <a href="https://www.kaggle.com/competitions" target="_blank" rel="noopener noreferrer" className="text-purple-300 hover:text-white flex items-center gap-2">
                   Explore Competitions <FaExternalLinkAlt className="text-sm" />
                 </a>
@@ -112,7 +112,7 @@ export default function Competitions() {
                 <FaLightbulb className="text-2xl text-green-300" />
                 <h3 className="text-lg font-semibold text-gray-100">Learn from Winners</h3>
               </div>
-              <p className="text-gray-300">Study previous winners' solutions to understand best practices and innovative approaches to problem-solving.</p>
+              <p className="text-gray-300">Study previous winner solutions to understand best practices and innovative approaches to problem-solving.</p>
             </div>
           </div>
         </div>

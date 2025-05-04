@@ -134,7 +134,7 @@ function Trivia() {
     return (
       <div className="p-6 bg-green-900 rounded-lg text-green-100 text-center">
         <FaLightbulb className="inline text-2xl mb-2 text-yellow-400" />
-        <div className="text-lg font-semibold mb-2">You've completed the Generative AI Trivia!</div>
+        <div className="text-lg font-semibold mb-2">You have completed the Generative AI Trivia!</div>
         <div className="text-green-200">Want to learn more? Explore the resources and articles linked above.</div>
       </div>
     );
@@ -191,7 +191,7 @@ export default function GenerativeAI() {
           <h1 className="text-4xl font-bold text-fuchsia-200 flex items-center gap-2"><FaRobot className="text-fuchsia-400" /> Generative AI</h1>
           <p className="mt-2 text-lg text-gray-200 max-w-2xl">
             Generative AI refers to artificial intelligence models that can create new content—like writing, images, music, video, or code—rather than just analyzing existing data.<br /><br />
-            These systems are trained on huge datasets and learn patterns well enough to produce original (but statistically learned) outputs. You give them a prompt (like "Write a story about a robot dog"), and they generate a coherent, creative response.
+            These systems are trained on huge datasets and learn patterns well enough to produce original (but statistically learned) outputs. You give them a prompt (like Write a story about a robot dog), and they generate a coherent, creative response.
           </p>
         </div>
       </header>
@@ -207,7 +207,7 @@ export default function GenerativeAI() {
           <div className="mb-6 text-gray-200">
             <h3 className="text-xl font-semibold mb-2">Transformers</h3>
             <p className="mb-2">
-              Transformers are the foundation of most modern generative AI models, including GPT. They were introduced in 2017 in the groundbreaking paper <a href="https://arxiv.org/abs/1706.03762" target="_blank" rel="noopener noreferrer" className="underline text-fuchsia-300 hover:text-fuchsia-100">"Attention is All You Need"</a>. Unlike earlier neural networks that processed information sequentially (one word at a time), transformers use a mechanism called <b>self-attention</b> to look at all words in a sentence simultaneously. This allows them to understand context more deeply—for example, distinguishing between "bank" as a financial institution vs. the side of a river.
+              Transformers are the foundation of most modern generative AI models, including GPT. They were introduced in 2017 in the groundbreaking paper <a href="https://arxiv.org/abs/1706.03762" target="_blank" rel="noopener noreferrer" className="underline text-fuchsia-300 hover:text-fuchsia-100">Attention is All You Need</a>. Unlike earlier neural networks that processed information sequentially (one word at a time), transformers use a mechanism called <b>self-attention</b> to look at all words in a sentence simultaneously. This allows them to understand context more deeply—for example, distinguishing between bank as a financial institution vs. the side of a river.
             </p>
             <p className="mb-2">
               Transformers are trained to predict the next word in a sentence, given all the previous ones. When scaled up and trained on massive datasets, they can generate paragraphs of text, write code, answer questions, or summarize articles—all by learning statistical patterns in language.
@@ -219,10 +219,10 @@ export default function GenerativeAI() {
           <div className="mb-6 text-gray-200">
             <h3 className="text-xl font-semibold mb-2">Diffusion Models</h3>
             <p>
-              Diffusion models are behind many image and video generation tools (like DALL·E 2 and Stable Diffusion). These models start with a completely noisy image—like TV static—and gradually remove the noise in a step-by-step process to reveal a clean, realistic image that matches a given text prompt (e.g., "a red panda riding a skateboard").
+              Diffusion models are behind many image and video generation tools (like DALL·E 2 and Stable Diffusion). These models start with a completely noisy image—like TV static—and gradually remove the noise in a step-by-step process to reveal a clean, realistic image that matches a given text prompt (e.g., a red panda riding a skateboard).
             </p>
             <p>
-              They're trained to do the opposite of adding noise: to recover the original image. During training, the model sees many images gradually noised, learns how to reverse that process, and finally can generate images from scratch by starting with noise.
+              They are trained to do the opposite of adding noise: to recover the original image. During training, the model sees many images gradually noised, learns how to reverse that process, and finally can generate images from scratch by starting with noise.
             </p>
           </div>
         </section>

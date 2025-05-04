@@ -70,7 +70,7 @@ export default function News() {
                 <span>March 12, 2024</span>
               </div>
               <h3 className="text-xl font-semibold text-gray-800 mb-2">
-                "Efficient Training of Large Language Models"
+                Efficient Training of Large Language Models
               </h3>
               <p className="text-gray-600 mb-4">
                 This paper introduces a novel approach to training large language models that reduces computational costs by 40% while maintaining model performance.
@@ -91,7 +91,7 @@ export default function News() {
                 <span>March 8, 2024</span>
               </div>
               <h3 className="text-xl font-semibold text-gray-800 mb-2">
-                "Advancements in Few-Shot Learning"
+                Advancements in Few-Shot Learning
               </h3>
               <p className="text-gray-600 mb-4">
                 A new architecture for few-shot learning that achieves human-level performance on several benchmark tasks with minimal training examples.

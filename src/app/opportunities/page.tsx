@@ -2,7 +2,7 @@
 
 import React, { useState } from "react";
 import Link from "next/link";
-import { FaExternalLinkAlt, FaUniversity, FaIndustry, FaGlobe, FaBookOpen, FaLightbulb } from "react-icons/fa";
+import { FaExternalLinkAlt, FaUniversity, FaGlobe, FaBookOpen, FaLightbulb } from "react-icons/fa";
 
 const conferences = [
   {
